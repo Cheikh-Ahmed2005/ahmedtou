@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ahmedtou - أفضل محل لبيع وشراء وإصلاح الهواتف في موريتانيا" />
+  <title>Ahmedtou | بيع وشراء وإصلاح الهواتف</title>
+
+  <!-- Fonts: Cairo (Arabic + Latin) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================
+       NAVBAR
+  ========================= -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+
+      <!-- Logo -->
+      <a href="#home" class="navbar__logo" aria-label="Ahmedtou">
+        <span class="logo-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+        <span class="logo-text">Ahmedtou</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="navbar__links" id="navLinks" aria-label="القائمة الرئيسية">
+        <a href="#home"     class="nav-link active" data-i18n="nav_home">الرئيسية</a>
+        <a href="#phones"   class="nav-link"        data-i18n="nav_phones">الهواتف</a>
+        <a href="#buy"      class="nav-link"        data-i18n="nav_buy">شراء هاتف</a>
+        <a href="#repair"   class="nav-link"        data-i18n="nav_repair">الإصلاح</a>
+        <a href="#contact"  class="nav-link"        data-i18n="nav_contact">تواصل معنا</a>
+      </nav>
+
+      <!-- Actions: Lang toggle + Hamburger -->
+      <div class="navbar__actions">
+        <button class="btn-lang" id="langToggle" aria-label="تغيير اللغة">
+          <i class="fa-solid fa-globe"></i>
+          <span id="langLabel">FR</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav aria-label="القائمة المحمولة">
+        <a href="#home"    class="mobile-link" data-i18n="nav_home">الرئيسية</a>
+        <a href="#phones"  class="mobile-link" data-i18n="nav_phones">الهواتف</a>
+        <a href="#buy"     class="mobile-link" data-i18n="nav_buy">شراء هاتف</a>
+        <a href="#repair"  class="mobile-link" data-i18n="nav_repair">الإصلاح</a>
+        <a href="#contact" class="mobile-link" data-i18n="nav_contact">تواصل معنا</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========================
+         HERO SECTION
+    ========================= -->
+    <section id="home" class="hero">
+      <div class="hero__bg-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__text">
+          <span class="hero__badge" data-i18n="hero_badge">
+            <i class="fa-solid fa-star"></i> الأفضل في موريتانيا
+          </span>
+          <h1 class="hero__title" data-i18n="hero_title">
+            وجهتك الأولى للهواتف<br />في <span class="highlight">موريتانيا</span>
+          </h1>
+          <p class="hero__subtitle" data-i18n="hero_subtitle">
+            نوفر أحدث الهواتف بأفضل الأسعار، ونشتري هاتفك المستعمل،
+            ونُصلح أي عطل بكفاءة واحترافية عالية.
+          </p>
+          <div class="hero__btns">
+            <a href="#phones" class="btn btn--primary" data-i18n="hero_btn_phones">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              اكتشف الهواتف
+            </a>
+            <a href="#repair" class="btn btn--outline" data-i18n="hero_btn_repair">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              اطلب إصلاح هاتفك
+            </a>
+          </div>
+
+          <!-- Quick stats under hero buttons -->
+          <div class="hero__stats">
+            <div class="stat">
+              <strong class="counter" data-target="500">0</strong><span>+</span>
+              <small data-i18n="stat_phones">هاتف متاح</small>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <strong class="counter" data-target="2000">0</strong><span>+</span>
+              <small data-i18n="stat_clients">عميل راضٍ</small>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <strong class="counter" data-target="5">0</strong><span></span>
+              <small data-i18n="stat_years">سنوات خبرة</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero visual: floating phone mockup -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="phone-mockup">
+            <div class="phone-mockup__frame">
+              <div class="phone-mockup__screen">
+                <div class="phone-mockup__status-bar"></div>
+                <div class="phone-mockup__content">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <span>Ahmedtou</span>
+                </div>
+              </div>
+              <div class="phone-mockup__btn"></div>
+            </div>
+            <div class="phone-glow"></div>
+          </div>
+          <!-- Floating badges -->
+          <div class="float-badge float-badge--top">
+            <i class="fa-solid fa-shield-check"></i>
+            <span data-i18n="badge_warranty">ضمان أصلي</span>
+          </div>
+          <div class="float-badge float-badge--bottom">
+            <i class="fa-solid fa-tags"></i>
+            <span data-i18n="badge_price">أسعار تنافسية</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave separator -->
+      <div class="hero__wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ========================
+         FEATURED PHONES SECTION
+    ========================= -->
+    <section id="phones" class="section phones-section">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-tag" data-i18n="phones_tag">هواتفنا</span>
+          <h2 class="section-title" data-i18n="phones_title">الهواتف المميزة</h2>
+          <p class="section-desc" data-i18n="phones_desc">
+            اختر من بين تشكيلة واسعة من أحدث الهواتف الذكية بأسعار منافسة
+          </p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="filter-tabs" role="tablist" data-animate>
+          <button class="filter-tab active" data-filter="all"      role="tab" data-i18n="filter_all">الكل</button>
+          <button class="filter-tab"        data-filter="apple"    role="tab">
+            <i class="fa-brands fa-apple"></i> iPhone
+          </button>
+          <button class="filter-tab"        data-filter="samsung-s" role="tab">Samsung S</button>
+          <button class="filter-tab"        data-filter="samsung-z" role="tab">Samsung Z</button>
+          <button class="filter-tab"        data-filter="samsung-a" role="tab">Samsung A</button>
+          <button class="filter-tab"        data-filter="xiaomi"    role="tab">Xiaomi</button>
+          <button class="filter-tab"        data-filter="other"     role="tab" data-i18n="filter_other">أخرى</button>
+        </div>
+
+        <!-- Phone cards grid — populated by JS -->
+        <div class="phones-grid" id="phonesGrid" data-animate></div>
+
+        <div class="section-footer" data-animate>
+          <a href="#contact" class="btn btn--primary" data-i18n="phones_cta">
+            <i class="fa-solid fa-phone"></i>
+            تواصل للمزيد من الخيارات
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         BUY FROM US / SELL TO US
+    ========================= -->
+    <section id="buy" class="section buy-section">
+      <div class="container">
+        <div class="buy-grid">
+
+          <!-- We sell -->
+          <div class="buy-card buy-card--sell" data-animate>
+            <div class="buy-card__icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <h3 data-i18n="buy_sell_title">اشترِ هاتفًا جديدًا</h3>
+            <p data-i18n="buy_sell_desc">
+              نوفر لك أحدث الهواتف الذكية من جميع الماركات العالمية،
+              جديدة ومضمونة بأسعار مناسبة للجيب الموريتاني.
+            </p>
+            <ul class="buy-list">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="buy_sell_f1">ضمان أصلي من الشركة</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="buy_sell_f2">فاتورة رسمية</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="buy_sell_f3">دفع بالتقسيط متاح</span></li>
+            </ul>
+            <a href="#phones" class="btn btn--primary" data-i18n="buy_sell_btn">تصفح الهواتف</a>
+          </div>
+
+          <!-- We buy -->
+          <div class="buy-card buy-card--buy" data-animate>
+            <div class="buy-card__icon">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+            <h3 data-i18n="buy_buy_title">بع هاتفك المستعمل</h3>
+            <p data-i18n="buy_buy_desc">
+              هل لديك هاتف مستعمل وتريد بيعه؟ نشتري هاتفك بأفضل سعر في السوق
+              مع تقييم فوري وصرف نقدي في نفس اليوم.
+            </p>
+            <ul class="buy-list">
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="buy_buy_f1">تقييم فوري ومجاني</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="buy_buy_f2">دفع نقدي فوري</span></li>
+              <li><i class="fa-solid fa-check"></i> <span data-i18n="buy_buy_f3">نشتري جميع الماركات</span></li>
+            </ul>
+            <a href="#contact" class="btn btn--accent" data-i18n="buy_buy_btn">قيّم هاتفي الآن</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         REPAIR SECTION
+    ========================= -->
+    <section id="repair" class="section repair-section">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-tag" data-i18n="repair_tag">الإصلاح</span>
+          <h2 class="section-title" data-i18n="repair_title">إصلاح احترافي لهاتفك</h2>
+          <p class="section-desc" data-i18n="repair_desc">
+            فريقنا المتخصص يُصلح أعطال الهواتف بدقة عالية وسرعة في التسليم
+          </p>
+        </div>
+
+        <div class="repair-grid" data-animate>
+
+          <div class="repair-card">
+            <div class="repair-card__icon repair-icon--screen">
+              <i class="fa-solid fa-display"></i>
+            </div>
+            <h4 data-i18n="repair_screen">تغيير الشاشة</h4>
+            <p data-i18n="repair_screen_desc">استبدال الشاشة المكسورة أو المعطوبة بشاشة أصلية عالية الجودة</p>
+          </div>
+
+          <div class="repair-card">
+            <div class="repair-card__icon repair-icon--battery">
+              <i class="fa-solid fa-battery-full"></i>
+            </div>
+            <h4 data-i18n="repair_battery">تغيير البطارية</h4>
+            <p data-i18n="repair_battery_desc">استبدال البطاريات القديمة وضعيفة الشحن ببطاريات جديدة أصلية</p>
+          </div>
+
+          <div class="repair-card">
+            <div class="repair-card__icon repair-icon--water">
+              <i class="fa-solid fa-droplet"></i>
+            </div>
+            <h4 data-i18n="repair_water">أضرار الماء</h4>
+            <p data-i18n="repair_water_desc">إصلاح متخصص للأضرار الناجمة عن الماء والرطوبة</p>
+          </div>
+
+          <div class="repair-card">
+            <div class="repair-card__icon repair-icon--software">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h4 data-i18n="repair_software">مشاكل البرامج</h4>
+            <p data-i18n="repair_software_desc">إصلاح مشاكل النظام، إعادة الضبط، تحديث البرامج</p>
+          </div>
+
+          <div class="repair-card">
+            <div class="repair-card__icon repair-icon--camera">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+            <h4 data-i18n="repair_camera">إصلاح الكاميرا</h4>
+            <p data-i18n="repair_camera_desc">إصلاح أو استبدال الكاميرا الأمامية والخلفية</p>
+          </div>
+
+          <div class="repair-card">
+            <div class="repair-card__icon repair-icon--charging">
+              <i class="fa-solid fa-plug"></i>
+            </div>
+            <h4 data-i18n="repair_charging">منفذ الشحن</h4>
+            <p data-i18n="repair_charging_desc">إصلاح وتغيير منافذ الشحن المعطوبة أو التالفة</p>
+          </div>
+
+        </div>
+
+        <div class="repair-cta" data-animate>
+          <div class="repair-cta__text">
+            <h3 data-i18n="repair_cta_title">هل هاتفك يحتاج إصلاح؟</h3>
+            <p data-i18n="repair_cta_desc">تواصل معنا الآن واحصل على تقييم مجاني لعطل هاتفك</p>
+          </div>
+          <a href="#contact" class="btn btn--primary" data-i18n="repair_cta_btn">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            احجز موعد إصلاح
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================
+         SERVICES SECTION
+    ========================= -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-tag" data-i18n="services_tag">خدماتنا</span>
+          <h2 class="section-title" data-i18n="services_title">كل ما تحتاجه في مكان واحد</h2>
+        </div>
+
+        <div class="services-grid" data-animate>
+
+          <div class="service-card">
+            <div class="service-card__icon service--sell">
+              <i class="fa-solid fa-store"></i>
+            </div>
+            <h3 data-i18n="svc_sell_title">بيع الهواتف</h3>
+            <p data-i18n="svc_sell_desc">أحدث الهواتف الذكية من أكبر الماركات العالمية بأسعار تنافسية ومضمونة</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon service--buy">
+              <i class="fa-solid fa-recycle"></i>
+            </div>
+            <h3 data-i18n="svc_buy_title">شراء المستعمل</h3>
+            <p data-i18n="svc_buy_desc">نشتري هاتفك المستعمل بسعر عادل وفوري مهما كانت حالته أو ماركته</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon service--repair">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <h3 data-i18n="svc_repair_title">إصلاح الهواتف</h3>
+            <p data-i18n="svc_repair_desc">تقنيون محترفون يُصلحون هاتفك بسرعة ودقة عالية مع ضمان على الإصلاح</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon service--acc">
+              <i class="fa-solid fa-headphones"></i>
+            </div>
+            <h3 data-i18n="svc_acc_title">الإكسسوارات</h3>
+            <p data-i18n="svc_acc_desc">شواحن، سماعات، جرابات، واقيات شاشة وكل ما يتعلق بالهواتف</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         WHY AHMEDTOU SECTION
+    ========================= -->
+    <section id="why" class="section why-section">
+      <div class="container">
+        <div class="why-grid">
+
+          <div class="why-content" data-animate>
+            <span class="section-tag" data-i18n="why_tag">لماذا نحن؟</span>
+            <h2 class="section-title" data-i18n="why_title">لماذا تختار Ahmedtou؟</h2>
+            <p class="section-desc" data-i18n="why_desc">
+              نحن نفهم احتياجاتك وميزانيتك. لذلك نقدم لك الخيار الأفضل بالسعر المناسب مع ضمان الجودة والخدمة.
+            </p>
+
+            <div class="why-features">
+              <div class="why-feature">
+                <div class="why-feature__icon">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                  <h4 data-i18n="why_f1_title">ضمان أصلي معتمد</h4>
+                  <p data-i18n="why_f1_desc">جميع هواتفنا مضمونة رسميًا مع فاتورة واضحة</p>
+                </div>
+              </div>
+
+              <div class="why-feature">
+                <div class="why-feature__icon">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div>
+                  <h4 data-i18n="why_f2_title">خدمة سريعة</h4>
+                  <p data-i18n="why_f2_desc">تسليم فوري للهواتف وإصلاح في نفس اليوم</p>
+                </div>
+              </div>
+
+              <div class="why-feature">
+                <div class="why-feature__icon">
+                  <i class="fa-solid fa-tags"></i>
+                </div>
+                <div>
+                  <h4 data-i18n="why_f3_title">أسعار تنافسية</h4>
+                  <p data-i18n="why_f3_desc">أفضل الأسعار في السوق الموريتاني مضمونة</p>
+                </div>
+              </div>
+
+              <div class="why-feature">
+                <div class="why-feature__icon">
+                  <i class="fa-solid fa-headset"></i>
+                </div>
+                <div>
+                  <h4 data-i18n="why_f4_title">دعم ما بعد البيع</h4>
+                  <p data-i18n="why_f4_desc">نحن هنا لدعمك حتى بعد الشراء، دائمًا</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Why stats panel -->
+          <div class="why-stats" data-animate>
+            <div class="why-stat-card">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <strong class="counter" data-target="500">0</strong><span>+</span>
+              <span data-i18n="wstat_phones">هاتف في المخزون</span>
+            </div>
+            <div class="why-stat-card">
+              <i class="fa-solid fa-users"></i>
+              <strong class="counter" data-target="2000">0</strong><span>+</span>
+              <span data-i18n="wstat_clients">عميل موثوق</span>
+            </div>
+            <div class="why-stat-card">
+              <i class="fa-solid fa-star"></i>
+              <strong>4.9</strong><span>/5</span>
+              <span data-i18n="wstat_rating">تقييم العملاء</span>
+            </div>
+            <div class="why-stat-card">
+              <i class="fa-solid fa-wrench"></i>
+              <strong class="counter" data-target="300">0</strong><span>+</span>
+              <span data-i18n="wstat_repairs">إصلاح ناجح</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         CONTACT SECTION
+    ========================= -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header" data-animate>
+          <span class="section-tag" data-i18n="contact_tag">تواصل معنا</span>
+          <h2 class="section-title" data-i18n="contact_title">نحن هنا لمساعدتك</h2>
+          <p class="section-desc" data-i18n="contact_desc">تواصل معنا عبر أي من الوسائل التالية وسنرد عليك في أقرب وقت</p>
+        </div>
+
+        <div class="contact-grid" data-animate>
+
+          <!-- Contact info -->
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4 data-i18n="contact_loc_title">العنوان</h4>
+                <p data-i18n="contact_loc">كرو، موريتانيا</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <h4 data-i18n="contact_phone_title">رقم الهاتف</h4>
+                <p dir="ltr"><a href="tel:+22247777451">+222 47 77 74 51</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <h4>WhatsApp</h4>
+                <p dir="ltr"><a href="https://wa.me/22247777451" target="_blank" rel="noopener">+222 47 77 74 51</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <h4 data-i18n="contact_hours_title">ساعات العمل</h4>
+                <p data-i18n="contact_hours">السبت - الخميس: 8ص - 9م</p>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://www.facebook.com/share/1C2HPzLXfh/" target="_blank" rel="noopener" class="social-btn social-btn--fb"  aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" data-i18n="form_name">الاسم الكامل</label>
+                <input type="text" id="name" name="name" required autocomplete="name"
+                  data-i18n-placeholder="form_name_ph" placeholder="أدخل اسمك الكامل" />
+              </div>
+              <div class="form-group">
+                <label for="phone" data-i18n="form_phone">رقم الهاتف</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel"
+                  placeholder="20 00 00 00" dir="ltr" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject" data-i18n="form_subject">الموضوع</label>
+              <select id="subject" name="subject">
+                <option value="buy"     data-i18n="form_opt_buy">شراء هاتف</option>
+                <option value="sell"    data-i18n="form_opt_sell">بيع هاتف مستعمل</option>
+                <option value="repair"  data-i18n="form_opt_repair">إصلاح هاتف</option>
+                <option value="other"   data-i18n="form_opt_other">استفسار آخر</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="form_msg">رسالتك</label>
+              <textarea id="message" name="message" rows="4" required
+                data-i18n-placeholder="form_msg_ph" placeholder="اكتب رسالتك هنا..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" data-i18n="form_send">
+              <i class="fa-solid fa-paper-plane"></i>
+              إرسال الرسالة
+            </button>
+            <div class="form-success" id="formSuccess" aria-live="polite">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="form_success">تم إرسال رسالتك بنجاح! سنتواصل معك قريبًا.</span>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================
+       FOOTER
+  ========================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="#home" class="navbar__logo">
+            <span class="logo-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+            <span class="logo-text">Ahmedtou</span>
+          </a>
+          <p data-i18n="footer_brand_desc">
+            وجهتك الأولى لبيع وشراء وإصلاح الهواتف الذكية في موريتانيا. جودة موثوقة وأسعار عادلة.
+          </p>
+        </div>
+
+        <!-- Quick links -->
+        <div class="footer__links">
+          <h5 data-i18n="footer_links_title">روابط سريعة</h5>
+          <ul>
+            <li><a href="#home"    data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="#phones"  data-i18n="nav_phones">الهواتف</a></li>
+            <li><a href="#repair"  data-i18n="nav_repair">الإصلاح</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer__links">
+          <h5 data-i18n="footer_services_title">خدماتنا</h5>
+          <ul>
+            <li><a href="#services" data-i18n="svc_sell_title">بيع الهواتف</a></li>
+            <li><a href="#buy"      data-i18n="svc_buy_title">شراء المستعمل</a></li>
+            <li><a href="#repair"   data-i18n="svc_repair_title">إصلاح الهواتف</a></li>
+            <li><a href="#services" data-i18n="svc_acc_title">الإكسسوارات</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact info -->
+        <div class="footer__contact">
+          <h5 data-i18n="footer_contact_title">معلومات التواصل</h5>
+          <p><i class="fa-solid fa-location-dot"></i> <span data-i18n="contact_loc">كرو، موريتانيا</span></p>
+          <p dir="ltr"><i class="fa-solid fa-phone"></i> +222 47 77 74 51</p>
+          <p><i class="fa-solid fa-clock"></i> <span data-i18n="contact_hours">السبت - الخميس: 8ص - 9م</span></p>
+          <div class="contact-socials" style="margin-top:1rem;">
+            <a href="https://www.facebook.com/share/1C2HPzLXfh/" target="_blank" rel="noopener" class="social-btn social-btn--fb" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                      </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>
+          &copy; <span id="year"></span> Ahmedtou.
+          <span data-i18n="footer_rights">جميع الحقوق محفوظة.</span>
+        </p>
+        <p>
+          <span data-i18n="footer_made">صُنع بـ</span>
+          <i class="fa-solid fa-heart" style="color:var(--accent)"></i>
+          <span data-i18n="footer_in">في موريتانيا</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

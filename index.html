@@ -121,18 +121,103 @@
         <!-- Hero visual: floating phone mockup -->
         <div class="hero__visual" aria-hidden="true">
           <div class="phone-mockup">
+
+            <!-- Glow layers -->
+            <div class="phone-glow phone-glow--outer"></div>
+            <div class="phone-glow phone-glow--inner"></div>
+
+            <!-- Phone frame -->
             <div class="phone-mockup__frame">
+
+              <!-- Side buttons -->
+              <div class="phone-btn phone-btn--vol-up"></div>
+              <div class="phone-btn phone-btn--vol-down"></div>
+              <div class="phone-btn phone-btn--silent"></div>
+              <div class="phone-btn phone-btn--power"></div>
+
+              <!-- Screen -->
               <div class="phone-mockup__screen">
-                <div class="phone-mockup__status-bar"></div>
-                <div class="phone-mockup__content">
-                  <i class="fa-solid fa-mobile-screen-button"></i>
-                  <span>Ahmedtou</span>
+
+                <!-- Dynamic Island -->
+                <div class="phone-di">
+                  <div class="phone-di__camera"></div>
                 </div>
-              </div>
-              <div class="phone-mockup__btn"></div>
-            </div>
-            <div class="phone-glow"></div>
-          </div>
+
+                <!-- Status bar -->
+                <div class="phone-mockup__status-bar">
+                  <span class="phone-status__time">9:41</span>
+                  <div class="phone-status__icons">
+                    <i class="fa-solid fa-signal"></i>
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-battery-full"></i>
+                  </div>
+                </div>
+
+                <!-- Screen content -->
+                <div class="phone-mockup__content">
+
+                  <!-- Store header -->
+                  <div class="phone-store-header">
+                    <div class="phone-store-logo">
+                      <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <div class="phone-store-info">
+                      <span class="phone-store-name">Ahmedtou</span>
+                      <span class="phone-store-sub">موريتانيا</span>
+                    </div>
+                  </div>
+
+                  <!-- Featured phone card -->
+                  <div class="phone-card-mini">
+                    <div class="phone-card-mini__img">
+                      <i class="fa-brands fa-apple"></i>
+                    </div>
+                    <div class="phone-card-mini__info">
+                      <span class="phone-card-mini__name">iPhone 15 Pro</span>
+                      <span class="phone-card-mini__price">185,000 MRU</span>
+                      <span class="phone-card-mini__badge">جديد</span>
+                    </div>
+                  </div>
+
+                  <!-- Service icons row -->
+                  <div class="phone-services-row">
+                    <div class="phone-svc">
+                      <div class="phone-svc__icon phone-svc--buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                      </div>
+                      <span>بيع</span>
+                    </div>
+                    <div class="phone-svc">
+                      <div class="phone-svc__icon phone-svc--sell">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                      </div>
+                      <span>شراء</span>
+                    </div>
+                    <div class="phone-svc">
+                      <div class="phone-svc__icon phone-svc--repair">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                      </div>
+                      <span>إصلاح</span>
+                    </div>
+                  </div>
+
+                  <!-- Bottom bar -->
+                  <div class="phone-nav-bar">
+                    <i class="fa-solid fa-house"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+
+                </div><!-- /content -->
+
+                <!-- Home indicator -->
+                <div class="phone-home-indicator"></div>
+
+              </div><!-- /screen -->
+            </div><!-- /frame -->
+          </div><!-- /phone-mockup -->
+
           <!-- Floating badges -->
           <div class="float-badge float-badge--top">
             <i class="fa-solid fa-shield-check"></i>

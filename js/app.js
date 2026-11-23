@@ -313,7 +313,7 @@ const PHONES = [
     price: 160000,
     category: 'apple',
     badge: '',
-    img: 'https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-plus.jpg',
+    img: 'https://www.pbtech.co.nz/imgprod/M/P/MPHAPP115124.jpg?h=2339256657',
     bgColor: '#1a1f10',
   },
   {
